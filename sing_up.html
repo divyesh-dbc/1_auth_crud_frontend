@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sign Up</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/resonsive.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="main_page" id="signup">
+
+        <div class="section left">
+            <div class="logo"><img src="./assets/img/logo.svg"></div>
+            <div class="title_desc">
+                <div class="title">Numquam architecto iure</div>
+                <div class="description">Ut corrupti est molestiae occaecati voluptatem vel harum explicabo numquam.
+                </div>
+            </div>
+        </div>
+
+        <div class="section right">
+            <form id="signup_form" name="signup_form" method="post" novalidate>
+                <div class="title_desc">
+                    <div class="title">Create account</div>
+                    <div class="description">Already have an account? <a href="login.html"> Login</a></div>
+                </div>
+                <div class="form_controls">
+                    <div class="control_item w_50 pr_15">
+                        <input type="text" class="control" name="firstname" id="firstname" placeholder="First Name" autocomplete="off"/>
+                    </div>
+                    <div class="control_item w_50 pl_15">
+                        <input type="text" class="control" name="lastname" id="lastname" placeholder="Last Name" autocomplete="off"/>
+                    </div>
+                    <div class="control_item">
+                        <input type="text" class="control" name="email" id="email" placeholder="Email" autocomplete="off"/>
+                    </div>
+                    <div class="control_item">
+                        <input type="password" class="control" name="password" id="password" placeholder="Password" autocomplete="off"/>
+                        <i class="fa fa-eye-slash pass_icon"></i>
+                    </div>
+                    <div class="control_item">
+                        <input type="password" class="control" name="cpassword" id="cpassword" placeholder="confirm Password"autocomplete="off"/>
+                        <i class="fa fa-eye-slash pass_icon"></i>
+                    </div>
+                    <div class="control_item">
+                        <input type="checkbox" class="checkbox" name="condition" id="condition" />
+                        I agree to DopeSass <a href="#">Terms of service</a> & <a href="#">Privacy policy</a>
+                    </div>
+                    <div class="control_item">
+                        <a href="verify_email.html" class="button button_primary" id="submit_form">Create Account</a>
+                    </div>
+                    <hr data-content="OR"/>
+                    <div class="control_item">
+                        <button type="button" class="button button_light" id="google_login"><i class="fa fa-google"></i> Continue with
+                            Google</button>
+                    </div>
+                    <div class="control_item">
+                        <button type="button" class="button button_light" id="apple_login"><i class="fa fa-apple"></i> Continue with
+                            Apple</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
